@@ -13,7 +13,7 @@ function Home(props) {
                         </div>
                     </div>
                 })}
-                <button className='bg-red-600 w-[12%] h-[7vh]'>Order Now</button>
+                <button className='bg-red-600 w-[12%] h-[7vh]'>Orderr Now</button>
 
 
             </div>
