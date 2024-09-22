@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/fresheat/static/css/main.cce3793d.css",
+    "main.js": "/fresheat/static/js/main.51d5149e.js",
+    "static/js/453.608b5bfb.chunk.js": "/fresheat/static/js/453.608b5bfb.chunk.js",
+    "static/media/logofresh.svg": "/fresheat/static/media/logofresh.c9a3c67782d76fa28dfaea315135769b.svg",
+    "static/media/logo.svg": "/fresheat/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/fresheat/index.html",
+    "main.cce3793d.css.map": "/fresheat/static/css/main.cce3793d.css.map",
+    "main.51d5149e.js.map": "/fresheat/static/js/main.51d5149e.js.map",
+    "453.608b5bfb.chunk.js.map": "/fresheat/static/js/453.608b5bfb.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.cce3793d.css",
+    "static/js/main.51d5149e.js"
+  ]
+}
