@@ -26,7 +26,7 @@ function Navsection(props) {
     return (
         // navbar
         <>
-        <div className=' w-full '>
+        <div className=' w-full h-fll'>
             <div className='width-full flex font-[roboto] font-[300]'>
                 <div className="lg:w-1/6 h-[20vh] bg-[#FFFFFF] sm:w-[40vw]">
                     <img className='bg-center bg-cover py-6 px-5' src={logofresh} alt="" />
