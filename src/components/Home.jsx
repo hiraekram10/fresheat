@@ -1,21 +1,53 @@
 import React from 'react';
+import { FaCircleArrowDown } from "react-icons/fa6";
+import { useState, useEffect } from 'react';
+import ThemeBtn from '../utils/ThemeBtn';
+
 
 function Home(props) {
+    const [currentIndex, setCurrentIndex] = useState(0);
+    const data = [
+        { text: 'Spicy Fried Chicken', image: 'https://gramentheme.com/html/fresheat/assets/img/banner/bannerThumb1_1.png' },
+        { text: 'Chicago Deep Pizza King', image: 'https://gramentheme.com/html/fresheat/assets/img/banner/bannerThumb1_2.png' },
+        // Add more items if needed
+      ];
+   
+    
+      useEffect(() => {
+        const interval = setInterval(() => {
+          setCurrentIndex((prevIndex) => (prevIndex + 1) % data.length); // Cycle through both texts and images
+        }, 6000); // 6 seconds interval
+    
+        return () => clearInterval(interval); // Clean up interval on unmount
+      }, [data.length]);
+
     return (
-        <div className='w-full h-screen  text-white pt-2 bg-no-repeat bg-cover bg-[#522c168f] bg-blend-darken' style={{ backgroundImage: "url('https://static.vecteezy.com/system/resources/thumbnails/030/608/618/small/wall-old-surface-of-the-earth-stone-texture-rough-brick-earth-tone-use-this-for-wallpaper-or-background-image-paint-brown-texture-for-wallpaper-there-is-a-blank-space-for-text-photo.jpg')" }}>
-            <div className="textstrcuture mt-40 px-20 ">
-                <h1 className='text-[1.5vw] text-[#FB7911] leading-[6vw] tracking-tight uppercase font-[Epilogue] font-bold'>welcome fresheat</h1>
-                {["Spicy Fried", "Chiken"].map((item, index) => {
-                    return <div className="masker">
-                        <div className='w-fit flex items-center'>
+        // 
+        <div className=' bg-red-800 flex justify-center items-center  2xl:container 2xl:mx-auto w-full  h-screen overflow-hidden text-white pt-2 bg-no-repeat bg-cover bg-[#522c168f] bg-blend-darken' style={{ backgroundImage: "url('https://fresh-eat.vercel.app/static/media/bannerBG1_1.d0299277f22685822c5d.jpg')" }}>
+            <div className=" w-3/5 animate-slide textstrcuture flex flex-col lg:mt-20 md:mt-20 sm:mt-20 px-16 ">
+                <h1 className='animate-slide lg:text-[1.4rem] md:text-[1.3rem] text-[1.3rem] sm:text-[0.75rem] text-[#FB7911] lg:leading-[6vw] md:leading-[5vw] sm:leading-15 tracking-tight uppercase font-[Epilogue] font-bold'>welcome fresheat</h1>
 
-                            <h1 className='text-[7vw] leading-[7vw] tracking-tight uppercase font-[Epilogue] font-[900] 'key={index}>{item}</h1>
-                        </div>
+                <div className="masker">
+                    <div className=' w-fit flex items-center ' >
+
+                        <h1 className='text-[7vw] lg:text-[6vw] md:text-[6vw] sm:text-[2.8rem] lg:leading-[7vw] md:leading-[5vw] sm:leading-20 tracking-tight uppercase font-[Epilogue] font-[900]'>{data[currentIndex].text}</h1>
                     </div>
-                })}
-                <button className='bg-red-600 w-[12%] h-[7vh]'>Orderr Now</button>
 
+                </div>
 
+                <div className='animate-slide flex justify-start items-center '>
+                    {/* <button className='uppercase font-[roboto] text-[0.90rem]'> Order Now </button> */}
+                    <ThemeBtn title= {'ORDER NOW'}/>
+                     
+                    
+                </div>
+
+            </div>
+            <div className=' w-2/5 animate-slide'>
+            <div className='2xl:flex xl:flex lg:hidden '>
+                <img className=''  src={data[currentIndex].image} alt="" />
+            </div>
+            
             </div>
 
 
