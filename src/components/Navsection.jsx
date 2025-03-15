@@ -110,7 +110,7 @@ function Navsection(props) {
                     </div>
                     <div className='lg:w-full lg:h-[14vh] md:bg-white  lg:bg-[rgb(1,15,28)] flex items-center justify-between  sm:bg-white sm:h-[40vh]'>
                         <div className=''>
-                            <ul className='lg:flex lg:gap-2 lg:px-12 font-[roboto] text-[1.1rem] font-[600] md:hidden sm:hidden'>
+                            <ul className='lg:flex lg:gap-2 lg:px-12 font-[roboto] text-[1.1rem] font-[400] md:hidden sm:hidden'>
                                 <li className='text-white lg:px-3 whitespace-nowrap  cursor-hover hover:text-[#EB0029]' >  <NavLink to={'/'} >Home  <FaPlus className='inline-block' /></NavLink> </li>
                                 <li className='text-white lg:px-3 whitespace-nowrap cursor-hover hover:text-[#EB0029]' > <NavLink to={'/about'}>About Us  <FaPlus className='inline-block' /></NavLink> </li>
 

@@ -1,10 +1,10 @@
 import React from 'react';
 import {BrowserRouter  ,Routes,Route}  from 'react-router-dom'
-import Home from '../components/Home';
+import Home from '../Pages/Home';
 import Notfound from '../components/Notfound';
-import About from '../components/About';
+import About from '../Pages/About';
 import Navsection from '../components/Navsection';
-import Contact from '../components/Contact';
+import Contact from '../Pages/Contact';
 import Fooditems from '../components/Fooditems';
 import Temlate from '../components/Temlate'
 
