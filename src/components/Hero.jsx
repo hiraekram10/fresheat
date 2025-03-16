@@ -10,6 +10,7 @@ function Hero(props) {
     const data = [
         { text: 'Spicy Fried Chicken', image: 'https://gramentheme.com/html/fresheat/assets/img/banner/bannerThumb1_1.png' },
         { text: 'Chicago Deep Pizza King', image: 'https://gramentheme.com/html/fresheat/assets/img/banner/bannerThumb1_2.png' },
+        {text:'Chicago Deep burger King',image:'https://gramentheme.com/html/fresheat/assets/img/banner/bannerThumb1_3.png'}
         // Add more items if needed
       ];
    
@@ -17,7 +18,7 @@ function Hero(props) {
       useEffect(() => {
         const interval = setInterval(() => {
           setCurrentIndex((prevIndex) => (prevIndex + 1) % data.length); // Cycle through both texts and images
-        }, 6000); // 6 seconds interval
+        }, 5000); // 6 seconds interval
     
         return () => clearInterval(interval); // Clean up interval on unmount
       }, [data.length]);

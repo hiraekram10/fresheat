@@ -57,7 +57,7 @@ function Offers(props) {
                 </div>
                 <div class="group relative z-30 top-0 px-2  w-full flex items-center justify-center ">
                   <img src={offer.imageUrl} width={150} className='object-cover'/>
-                  <img src={offer50} alt="" width={80} className='absolute z-40 top-0  animate__animated animate__pulse animate__infinite animate__delay-1s animate__slow'/>
+                  <img src={offer50} alt="" width={80} className='absolute z-40 top-0  animate__animated animate__wobble animate__infinite animate__delay-1s animate__slow'/>
                   
 
 

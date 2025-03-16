@@ -6,6 +6,7 @@ import Hero from '../components/Hero';
 import Offers from '../components/Offers';
 import Fooditems from '../components/Fooditems';
 import About from '../components/About';
+import BestDishes from '../components/BestDishes';
 
 
 
@@ -27,6 +28,9 @@ function Home(props) {
             </div>
             <div>
                 <About/>
+            </div>
+            <div>
+               <BestDishes/>
             </div>
 
 
