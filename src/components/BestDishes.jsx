@@ -1,5 +1,6 @@
 import React from 'react'
 import { MdOutlineFoodBank } from "react-icons/md";
+import Cardanim from '../utils/Cardanim';
 
 const BestDishes = () => {
   const posts = [
@@ -97,7 +98,7 @@ const BestDishes = () => {
 
 
           ))}
-
+<Cardanim/>
 
         </div>
       </div>
