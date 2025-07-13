@@ -7,7 +7,7 @@ const Cardanim = () => {
         <div className='relative'>
 
 
-            <div className="  py-8 carddown flex flex-col w-80 h-full rounded-xl items-center justify-center ">
+            <div className="bg-white  py-8 carddown flex flex-col w-80 h-full rounded-xl items-center justify-center ">
                 
                 <img
                     alt=""
@@ -17,7 +17,7 @@ const Cardanim = () => {
                 <div className="group">
 
 
-                    <h1 className="mt-4 text-lg font-bold leading-6 text-[1.1rem] text-gray-900 group-hover:text-gray-600">
+                    <h1 className="mt-4 relative z-10  text-lg font-bold leading-6 text-[1.1rem] text-gray-900 group-hover:text-white">
                         title
                     </h1>
                 </div>
@@ -41,14 +41,14 @@ const Cardanim = () => {
             initial={{
                 y:100,
                 opacity:0,
-                scale:0.98,
+                scale:1,
                 filter:'blur(10px)'
             
             }}
             whileHover={{
                 y:0,
                 opacity:1,
-                scale:0.98,
+                scale:1,
                 
                 filter:'blur(0px)'
             }}
