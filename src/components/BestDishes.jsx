@@ -62,42 +62,13 @@ const BestDishes = () => {
             Best selling Dishes
           </h2>
         </div>
-        <div className='mt-4 grid bg-rose-400 max-w-7xl grid-col-1 md:grid-cols-3 gap-x-5 gap-y-4 md:px-0'>
-          {posts.map((post) => (
-            <article key={post.id} className="bg-green-600 ">
-
-              <div className="py-8 carddown flex flex-col rounded-xl items-center justify-center bg-[#fdfcfc] ">
-              <img
-                    alt=""
-                    src={post.imageUrl}
-                    className="h-26 w-26 rounded-full bg-gray-50"
-                  />
-                <div className="group">
-
-                 
-                  <h1 className="mt-4 text-lg font-bold leading-6 text-[1.1rem] text-gray-900 group-hover:text-gray-600">
-                    {post.title}
-                  </h1>
-                </div>
-                <div className="flex items-center gap-x-4 text-xs">
-                  <h1
-                    className="relative z-10  bg-gray-50 px-3 py-2 font-regular text-[1rem] text-gray-600 "
-                  >
-                    The Registeration fees
-                  </h1>
-                </div>
-                <div className="flex items-center gap-x-4 text-xs">
-                  <h1
-                    className="relative z-10 bg-gray-50 px-3 py-2 text-[1.1rem] font-bold text-[#EB052D]"
-                  >
-                    {post.Price}
-                  </h1>
-                </div>
-              </div>
-            </article>
-
-
-          ))}
+        <div className='mt-4 overflow-hidden grid max-w-5xl mx-auto grid-col-1 md:grid-cols-3 gap-x-5 gap-y-4 md:px-0'>
+       
+<Cardanim/>
+<Cardanim/>
+<Cardanim/>
+<Cardanim/>
+<Cardanim/>
 <Cardanim/>
 
         </div>
