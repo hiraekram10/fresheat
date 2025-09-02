@@ -7,7 +7,7 @@ const Cardanim = () => {
         <div className='relative'>
 
 
-            <div className="  py-8 carddown flex flex-col w-80 h-full rounded-xl items-center justify-center ">
+            <div className="bg-white hover:bg-[#010F1C]  py-8 carddown flex flex-col w-80 h-full rounded-xl items-center justify-center ">
                 
                 <img
                     alt=""
@@ -41,14 +41,14 @@ const Cardanim = () => {
             initial={{
                 y:100,
                 opacity:0,
-                scale:0.98,
-                filter:'blur(10px)'
+               
+                // filter:'blur(10px)'
             
             }}
             whileHover={{
                 y:0,
                 opacity:1,
-                scale:0.98,
+                
                 
                 filter:'blur(0px)'
             }}
