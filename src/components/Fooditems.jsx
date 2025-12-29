@@ -58,8 +58,9 @@ function Fooditems(props) {
   ]
 
   return (
-    <div className="bg-[#F4F1EA] py-10 sm:py-10 sm:px-10">
-      <div className="mx-auto max-w-7xl px-6 lg:px-8 overflow-x-hidden container">
+    <div className="bg-[#F4F1EA] py-10 h-[80vh] sm:px-10 ">
+  
+      <div className="mx-auto max-w-7xl px-6   overflow-x-hidden container">
         <div className="mx-auto max-w-2xl overflow-hidden lg:max-w-4xl w-full flex flex-col items-center text-center">
 
           <p className="mt-2 text-lg sm:text-xl md:text-xl leading-8 font-[700] uppercase text-[#FB792F]">
@@ -74,7 +75,7 @@ function Fooditems(props) {
           </h2>
         </div>
 
-        <Swiper className="mx-auto mt-10 grid max-w-3xl grid-cols-1 gap-x-5 gap-y-16  pt-10 sm:mt-16 sm:pt-16 lg:mx-0 lg:max-w-none lg:grid-cols-4 md:grid-cols-3"
+        <Swiper className="mx-auto  grid max-w-3xl grid-cols-1 gap-x-5 lg:mx-0 lg:max-w-none lg:grid-cols-4 md:grid-cols-3"
           spaceBetween={20}
           slidesPerView={4}
           loop={true}

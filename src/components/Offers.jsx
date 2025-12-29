@@ -52,7 +52,7 @@ function Offers(props) {
                   <h3 class=" pb-2 text-sm font-[800] text-[#FC791A] leading-[2] ">
                     Limits Time Offer
                   </h3>
-                 <div className='mt-4 mb-0'><ThemeBtn title={'Order now'} /></div>
+                 <div className='mt-4 mb-0'><ThemeBtn title={'Order now'} color={'black-btn'} /></div>
 
                 </div>
                 <div class="group relative z-30 top-0 px-2  w-full flex items-center justify-center ">

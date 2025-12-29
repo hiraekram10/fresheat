@@ -65,3 +65,17 @@
     width:100%;
     transition:800ms ease all;
   }
+
+  .black-btn {
+    width: 160px;
+    background-color:#0b0013;
+    height: 50px;
+    color: #fff;
+    padding: 8px 0px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    outline: none;
+  }

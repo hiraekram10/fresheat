@@ -1,6 +1,7 @@
 import React from 'react'
 import { MdOutlineFoodBank } from "react-icons/md";
 import Cardanim from '../utils/Cardanim';
+import ThemeBtn from '../utils/ThemeBtn';
 
 const BestDishes = () => {
   const posts = [
@@ -14,10 +15,10 @@ const BestDishes = () => {
     },
     {
       id: 2,
-      title: 'Chiken Leg Piece',
+      title: 'Chinese Pasta',
       Price: '$20.89',
       imageUrl:
-        'https://gramentheme.com/html/fresheat/assets/img/food-items/item1_4.png',
+        'https://gramentheme.com/html/fresheat/assets/img/dishes/dishes1_2.png',
 
     },
     {
@@ -48,7 +49,7 @@ const BestDishes = () => {
   ]
   return (
     <div className='bg-[#F4F1EA] py-10 sm:py-10 sm:px-10 '>
-      <div className='mx-auto max-w-8xl px-6 md:px-6 overflow-x-hidden '>
+      <div className='mx-auto max-w-8xl px-6 md:px-6  overflow-x-hidden '>
         <div className="mx-auto max-w-2xl overflow-hidden lg:max-w-4xl w-full flex flex-col items-center text-center">
 
           <p className="mt-2 text-lg sm:text-sm md:text-sm  font-[700] uppercase text-[#FB792F]">
@@ -58,19 +59,23 @@ const BestDishes = () => {
           </p>
 
           {/* Main Heading */}
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight text-gray-900">
+          <h2 className="my-5 text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight text-gray-900">
             Best selling Dishes
           </h2>
         </div>
-        <div className='mt-4 overflow-hidden grid max-w-5xl mx-auto grid-col-1 md:grid-cols-3 gap-x-5 gap-y-4 md:px-0'>
-       
-<Cardanim/>
-<Cardanim/>
-<Cardanim/>
-<Cardanim/>
-<Cardanim/>
-<Cardanim/>
+        <div className=' grid max-w-7xl mx-auto grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6'>
+          {/* <div className=''></div> */}
 
+          {posts.map((item) => (
+            <div className='overflow-hidden'><Cardanim title={item.title} price={item.Price} imgUrl={item.imageUrl} /></div>
+          ))}
+
+
+
+
+        </div>
+        <div className='w-full text-center mt-4'>
+        <ThemeBtn title={'view Items'}/>
         </div>
       </div>
 

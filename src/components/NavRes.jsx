@@ -31,8 +31,8 @@ function NavRes({ open, setOpen }) {
             <ul className='flex flex-col gap-5'>
               <li className='text-black mx-2 px-5 py-2 border-b-[1px]  border-b-black font-[700] font-[roboto] text-[1.1rem]' >  <NavLink to={'/'} >Home </NavLink> </li>
               <li className='text-black mx-2 px-5 py-2 border-b-[1px]  border-b-black font-[700] font-[roboto] text-[1.1rem]' > <NavLink to={'/about'}>About Us  </NavLink> </li>
-              <li className='text-black mx-2 px-5 py-2 border-b-[1px]  border-b-black font-[700] font-[roboto] text-[1.1rem]' > <NavLink to={'/about'}>About Us  </NavLink> </li>
-              <li className='text-black mx-2 px-5 py-2 border-b-[1px]  border-b-black font-[700] font-[roboto] text-[1.1rem]' > <NavLink to={'/about'}>About Us  </NavLink> </li>
+              <li className='text-black mx-2 px-5 py-2 border-b-[1px]  border-b-black font-[700] font-[roboto] text-[1.1rem]' > <NavLink to={'/shop'}>Shop </NavLink> </li>
+              <li className='text-black mx-2 px-5 py-2 border-b-[1px]  border-b-black font-[700] font-[roboto] text-[1.1rem]' > <NavLink to={'/chefs'}>Chefs  </NavLink> </li>
               <li className='text-black mx-2 px-5 py-2 border-b-[1px]  border-b-black font-[700] font-[roboto] text-[1.1rem]' > <NavLink to={'/contact'}>Contact Us  </NavLink> </li>
 
             </ul>
